@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="./loader.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span id="nav-brand"><b>SHOP</b>LANE</span>
+            <a href="./index.html#clothing">CLOTHING</a>
+            <a href="./index.html#accessories">ACCESSORIES</a>
+            <div id="search-wrapper">
+                <input id="search" type="text" placeholder="Search for Clothing and Accessories">
+                <i class="fas fa-search"></i>
+            </div>
+            <a href="./checkout.html">
+                <div id="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div id="cart-count">0</div>
+                </div>
+            </a>
+            <i class="fa fa-user-circle"></i>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Checkout</h1>
+        <h2>Total Items: <span id="total-items"></span></h2>
+        <div id="main-content">
+            <section id="card-list">
+                <!-- add items here -->
+            </section>
+            <section id="amount-section">
+                <h2>Total Amount</h2>
+                <p>Amount: Rs <span id="total-amount"></span></p>
+                    <button id="place-order">Place Order</button>
+            </section>
+        </div>
+        <aside id="loader">
+            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </aside>
+    </main>
+
+    <footer>
+        <article>
+            <h5>ONLINE STORE</h5>
+            <h6>MEN CLOTHING</h6>
+            <h6>WOMEN CLOTHING</h6>
+            <h6>MEN ACCESSORIES</h6>
+            <h6>WOMEN ACCESSORIES</h6>
+        </article>
+        <article>
+            <h5>HELPFUL LINKS</h5>
+            <h6>HOME</h6>
+            <h6>ABOUT</h6>
+            <h6>CONTACT</h6>
+        </article>
+        <article>
+            <h5>PARTNERS</h5>
+            <h6> ZARA</h6>
+            <h6>PANTALOONS</h6>
+            <h6>LEVIS</h6>
+            <h6>UCB</h6>
+            <h6>+ MANY MORE</h6>
+        </article>
+        <article>
+            <h5>ADDRESS</h5>
+            <h6>BUILDING 101</h6>
+            <h6>CENTRAL AVENUE</h6>
+            <h6>LA - 902722</h6>
+            <h6>UNITED STATES</h6>
+        </article>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./checkout.js"></script>
+</body>
+
+</html>
